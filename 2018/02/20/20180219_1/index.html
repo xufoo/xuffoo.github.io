@@ -89,7 +89,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.loli.net/2018/02/20/5a8c35a8b5503.png">
 <meta property="og:image" content="https://i.loli.net/2018/02/20/5a8c35a760541.png">
-<meta property="og:updated_time" content="2018-02-22T02:25:48.898Z">
+<meta property="og:updated_time" content="2018-11-09T10:12:44.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="神经网络(Neural Network)">
 <meta name="twitter:description" content="神经网络模型(Neural Network)   该神经网络第一层为输入层(input layer)，第二层为隐藏层(hidden layer)，第三层为输出层(output layer) a代表激活单元，实际上x也可以看成激活单元$a^{(1)}$ ； $x_0$、$a_0 $为偏差单元(bias unit), 一般设置为1   每一个箭头相当于加权的过程，也就是$\theta x$的过程，所以">
@@ -372,7 +372,7 @@
 </li>
 </ul>
 <h2 id="梯度检验-Gradient-Checking"><a href="#梯度检验-Gradient-Checking" class="headerlink" title="梯度检验(Gradient Checking)"></a>梯度检验(Gradient Checking)</h2><p>目的是检验反向传播算梯度的过程中是否出现错误，一般在训练之前进行梯度检验。<br>例如针对某个参数$\theta_1$的检验：  </p>
-<script type="math/tex; mode=display">\frac{\partial}{\partial \theta_1}=\frac{J(\theta_0+\varepsilon,\theta_2,\theta_3...\theta_n)-J(\theta_0-\varepsilon,\theta_2,\theta_3...\theta_n)}{2\varepsilon}</script><p>需要注意的是这种计算梯度的方法非常慢，所以在进入训练之前应该停止使用。  </p>
+<script type="math/tex; mode=display">\frac{\partial}{\partial \theta_1}=\frac{J(\theta_1+\varepsilon,\theta_2,\theta_3...\theta_n)-J(\theta_1-\varepsilon,\theta_2,\theta_3...\theta_n)}{2\varepsilon}</script><p>需要注意的是这种计算梯度的方法非常慢，所以在进入训练之前应该停止使用。  </p>
 <h2 id="随机初始化-Random-Initialization"><a href="#随机初始化-Random-Initialization" class="headerlink" title="随机初始化(Random Initialization)"></a>随机初始化(Random Initialization)</h2><p>在之前的线性回归和逻辑回归中，初始化参数为0是可行的。但是在神经网络中这样做会使层之间的权重变得相同从而导致高度冗余。所以神经网络的初始化参数需要随机获取。</p>
 
       
